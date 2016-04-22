@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>da02c68c-a339-47d7-b05f-29cc7bc380f8</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Mech_setting.py</StartupFile>
+    <StartupFile>settingFrame.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,10 +22,37 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Function\DataManager.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Function\WidgetManager.py" />
+    <Compile Include="Function\__init__.py" />
+    <Compile Include="Item\AttrLine.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Item\MainList.py" />
+    <Compile Include="Item\NameSpace.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Item\TitlteBar.py" />
+    <Compile Include="Item\ToolBar.py" />
+    <Compile Include="Item\__init__.py" />
     <Compile Include="main.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Mech_setting.py" />
+    <Compile Include="settingFrame.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Widget\WeaponWidget.py" />
+    <Compile Include="Widget\EngineWidget.py" />
+    <Compile Include="Widget\BuildWidget.py" />
+    <Compile Include="Widget\__init__.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Function\" />
+    <Folder Include="Item\" />
+    <Folder Include="Widget\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
